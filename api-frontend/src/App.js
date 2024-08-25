@@ -23,7 +23,7 @@ function App() {
     try {
       const jsonInput = JSON.parse(inputData);
 
-      const res = await axios.post('http://localhost:5000/bfhl', jsonInput);
+      const res = await axios.post('https://api-backend-rose-ten.vercel.app//bfhl', jsonInput);
 
       setResponse(res.data);
       setError('');
